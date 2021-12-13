@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+</head>
+<body>
+<table border="1">
+    <thead>
+    <h2>Users</h2>
+    </thead>
+
+    <tr>
+        <th bgcolor="aqua">ID</th>
+        <th bgcolor="aqua">Name</th>
+        <th bgcolor="aqua">Surname</th>
+        <th bgcolor="aqua">Age</th>
+        <th bgcolor="aqua">Profession</th>
+        <th bgcolor="aqua">Password</th>
+        <th bgcolor="aqua">Role</th>
+        <th bgcolor="aqua">Action</th>
+    </tr>
+    <tr th:each="user : ${usersList}">
+
+        <td bgcolor="#ffe4c4" th:text="${user.getId()}"></td>
+        <td bgcolor="#ffe4c4" th:text="${user.getName()}"></td>
+        <td bgcolor="#ffe4c4" th:text="${user.getSurname()}"></td>
+        <td bgcolor="#ffe4c4" th:text="${user.getAge()}"></td>
+        <td bgcolor="#ffe4c4" th:text="${user.getProfession()}"></td>
+        <td bgcolor="#ffe4c4" th:text="${user.getPassword()}"></td>
+        <td bgcolor="#ffe4c4" th:text="${user.getRoles()}"></td>
+
+        <td bgcolor="#ffe4c4" >
+            <a th:href="@{'/admin/edit/'+${user.id}}">edit</a>
+            <a th:href="@{'/admin/delete/'+${user.id}}">delete</a>
+        </td>
+    </tr>
+</table>
+
+<p></p>
+<a style="background-color: rgb(150, 250, 150); color: rgb(0, 0, 0);
+border:1px rgb(0, 0, 100)  solid; padding: 3px" th:href="@{'/admin/add'}">Add new user</a>
+<p></p>
+<a style="background-color: rgb(250, 100, 0); color: rgb(0, 0, 0);
+border:1px rgb(0, 0, 100)  solid; padding: 3px" th:href="@{'/logout'}">Exit</a>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Add users</title>
+    <style>.inp {background: aqua;} .form {background: bisque;} </style>
+    <h2>Add user</h2>
+</head>
+<body>
+<form th:action="@{/admin/add}" method="post">
+    <p><label for="name">Name</label></p>
+    <p><input type="text" id="name" name="name" class="form" required></p>
+    <p><label for="surname">Surname</label></p>
+    <p><input type="text" id="surname" name="surname" class="form"></p>
+    <p><label for="age">Age</label></p>
+    <p><input type="number" id="age" name="age" class="form"></p>
+    <p><label for="profession">Profession</label></p>
+    <p><input type="text" id="profession" name="profession" class="form"></p>
+    <p><label for="password">Password</label></p>
+    <p><input type="password" id="password" name="password" class="form"></p>
+    <p></p>
+    <p><label >Role</label></p>
+    <table border="1" class="form">
+        <td class="form">
+            <input type="checkbox" name="rolesAdd" id="admin" value="ADMIN" class="form">
+            <label for="admin">ADMIN</label>
+        </td>
+        <td class="form">
+            <input type="checkbox" name="rolesAdd" id="user" value="USER" checked class="form">
+            <label for="user">USER</label>
+        </td>
+        <td class="form">
+            <input type="checkbox" name="rolesAdd" id="stranger" value="STRANGER" class="form">
+            <label for="stranger">STRANGER</label>
+        </td>
+    </table>
+    <p>
+        <input type="submit" value="Add" class="inp">
+    </p>
+</form>
+<p></p>
+<a style="background-color: rgb(250, 100, 0); color: rgb(0, 0, 0);
+border:1px rgb(0, 0, 100)  solid; padding: 3px" th:href="@{'/logout'}">Exit</a>
+</body>
+</html>

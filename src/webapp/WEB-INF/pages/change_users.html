@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <title>Change users</title>
+    <style>.inp {background: aqua;} .form {background: bisque;} </style>
+    <h2>Change user</h2>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <form th:action="@{/admin/edit}" th:object="${user}" method="post">
+        <p><input type="hidden" th:field="*{id}" /></p>
+
+        <p><label for="name">Name</label></p>
+        <p><input type="text" th:field="*{name}" id="name" value="name" class="form" required></p>
+
+        <p><label for="surname">Surname</label></p>
+        <p><input type="text" th:field="*{surname}" id="surname" value="surname" class="form"></p>
+
+        <p><label for="age">Age</label></p>
+        <p><input type="number" th:field="*{age}" id="age" value="age" class="form"></p>
+
+        <p><label for="profession">Profession</label></p>
+        <p><input type="text" th:field="*{profession}" id="profession" value="profession" class="form"></p>
+
+        <p><label for="password">Password</label></p>
+        <p><input type="password" th:field="*{password}" id="password" value="password" class="form"></p>
+        <p></p>
+        <p><label >Role</label></p>
+        <table border="1" class="form">
+            <td th:each="role : ${rolesList}" class="form">
+                <input type="checkbox" name="roles" th:field="*{roles}" th:value="${role}"
+                       th:text="${role.getName()}"  class="form"/>
+            </td>
+        </table>
+        <p>
+            <input type="submit" value="Edit" class="inp">
+        </p>
+
+    </form>
+    <p></p>
+    <a style="background-color: rgb(250, 100, 0); color: rgb(0, 0, 0);
+border:1px rgb(0, 0, 100)  solid; padding: 3px" th:href="@{'/logout'}">Exit</a>
+</body>
+</html>

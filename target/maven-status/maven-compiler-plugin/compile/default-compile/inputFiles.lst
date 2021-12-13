@@ -1,0 +1,17 @@
+C:\Users\Yur4ik\IdeaProjects\CRUD_Spring_Security_MVC_5\src\main\java\data\controller\AdminController.java
+C:\Users\Yur4ik\IdeaProjects\CRUD_Spring_Security_MVC_5\src\main\java\data\model\Role.java
+C:\Users\Yur4ik\IdeaProjects\CRUD_Spring_Security_MVC_5\src\main\java\data\model\User.java
+C:\Users\Yur4ik\IdeaProjects\CRUD_Spring_Security_MVC_5\src\main\java\data\service\UserServiceImpl.java
+C:\Users\Yur4ik\IdeaProjects\CRUD_Spring_Security_MVC_5\src\main\java\data\controller\StrangerController.java
+C:\Users\Yur4ik\IdeaProjects\CRUD_Spring_Security_MVC_5\src\main\java\data\dao\UserDAOImpl.java
+C:\Users\Yur4ik\IdeaProjects\CRUD_Spring_Security_MVC_5\src\main\java\data\security\SpringSecurityInitializer.java
+C:\Users\Yur4ik\IdeaProjects\CRUD_Spring_Security_MVC_5\src\main\java\data\dao\UserDAO.java
+C:\Users\Yur4ik\IdeaProjects\CRUD_Spring_Security_MVC_5\src\main\java\data\controller\UserController.java
+C:\Users\Yur4ik\IdeaProjects\CRUD_Spring_Security_MVC_5\src\main\java\data\security\SecurityConfig.java
+C:\Users\Yur4ik\IdeaProjects\CRUD_Spring_Security_MVC_5\src\main\java\data\config\AppInit.java
+C:\Users\Yur4ik\IdeaProjects\CRUD_Spring_Security_MVC_5\src\main\java\data\config\HibernateConfig.java
+C:\Users\Yur4ik\IdeaProjects\CRUD_Spring_Security_MVC_5\src\main\java\data\config\WebConfig.java
+C:\Users\Yur4ik\IdeaProjects\CRUD_Spring_Security_MVC_5\src\main\java\data\security\LoginSuccessHandler.java
+C:\Users\Yur4ik\IdeaProjects\CRUD_Spring_Security_MVC_5\src\main\java\data\dao\RoleDAO.java
+C:\Users\Yur4ik\IdeaProjects\CRUD_Spring_Security_MVC_5\src\main\java\data\dao\RoleDAOImpl.java
+C:\Users\Yur4ik\IdeaProjects\CRUD_Spring_Security_MVC_5\src\main\java\data\service\UserService.java
